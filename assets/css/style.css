@@ -1,0 +1,103 @@
+body{
+    font-family: Arial,sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+ul#nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+ul#nav li {
+    display: inline-block;
+}
+
+ul#nav li a {
+    color: #fff;
+    display: block;
+    text-transform: capitalize;
+    padding: 18px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all .5s;
+}
+
+section.top-bar-section {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+ul#nav li a:focus {
+    outline: none;
+}
+
+.logo h3 {
+    color: #fff;
+    text-transform: capitalize;
+    padding: 5px 15px;
+    border: 2px solid #fff;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+ul#nav li a:hover {
+    color: #333;
+    font-weight: 600;
+    transition: all .5s;
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+section.video-hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video#Video-bg {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    display: table;
+    width: 100%;
+    height: 100vh;
+}
+.hero-content{
+    display: table-cell;
+    vertical-align: middle;
+    color: #ffffff;
+}
+.hero-content p{
+    margin-bottom: 0;
+}
+.hero-content h3 {
+    line-height: 36px;
+    font-size: 26px;
+    margin: 0;
+    padding: 35px 0;
+}
+div#video-Btn i.fa {
+    width: 50px;
+    background: #fff;
+    color: #333;
+    border-radius: 50%;
+    height: 50px;
+    line-height: 53px;
+    text-align: center !important;
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site Title</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<section class="top-bar-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="logo">
+                    <h3>logo here</h3>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <ul id="nav">
+                    <li><a href="#">menu item</a></li>
+                    <li><a href="#">menu item</a></li>
+                    <li><a href="#">menu item</a></li>
+                    <li><a href="#">menu item</a></li>
+                    <li><a href="#">menu item</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="video-hero-section">
+    <div class="overlay"></div>
+    <video autoplay muted loop id="Video-bg">
+        <source src="assets/video/Coffee Shop tablet [720p].mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="hero-content-area">
+        <div class="hero-content">
+            <p>Vendemos tu piso rapido con mas beneficio para ti <br/> Sin ningun riesgo ni inversion por tu parte</p>
+            <h3>La via mas rapida para vender tu piso con el maximo beneficio <br/> Renovamos tu piso con un diseno vanguardista y lo vendemos rapido</h3>
+            <div id="video-Btn" onclick="myFunction()"><i class="fa fa-pause"></i></div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+    var video = document.getElementById("Video-bg");
+    var btn = document.getElementById("video-Btn");
+
+    function myFunction() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "<i class='fa fa-pause'></i>";
+        } else {
+            video.pause();
+            btn.innerHTML = "<i class='fa fa-play'></i>";
+        }
+    }
+</script>
+</body>
+</html>
